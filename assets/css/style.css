@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Francois One', sans-serif, 'Syne Mono', monospace, 'Ubuntu', sans-serif;
+}
+
+:root {
+    --blue: #0089c8;
+    --lightblue: #61d7ff;
+    --darkblue: #016bb2;
+    --indigo: #003482;
+    --clearContainer: rgba(0, 0, 13, 15%);
+    --clearBorder: rgba(255, 255, 255, 15%);
+}
+
+body {
+    width: 100vw;
+    height: 100vw;
+    background-color: var(--lightblue);
+    background-image: radial-gradient(var(--lightblue), var(--blue));
+}
+
+.header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--darkblue);
+    background-image: linear-gradient(var(--darkblue) 55%, var(--indigo));
+}
+
+h1 {
+    margin: 10px;
+    padding: 2px;
+    color: #fff;
+    font-size: 35px;
+}
+
+#main {
+    display: flex;
+}
+
+#search-container {
+    width: 30%;
+    height: 600px;
+    background-color: var(--clearContainer);
+}
+
+#current-day-city-result-container {
+    width: 70%;
+    height: 300px;
+    background-color: var(--clearContainer);
+    border: 4px solid var(--clearBorder);
+    border-radius: 3px;
+}
+
+#forecast-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    height: 300px;
+    background-color: var(--clearContainer);
+    border: 4px solid var(--clearBorder);
+    border-radius: 3px;
+}
+
+.forecast-days {
+    width: 100px;
+    height: 200px;
+    background-color: var(--clearContainer);
+    border: 4px solid var(--clearBorder);
+}
