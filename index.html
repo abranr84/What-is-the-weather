@@ -18,10 +18,12 @@
 
     <section id="main">
         <div id ="search-container">
-            <h2>Search for a City:</h2>
-            <input type="text" id = "search-city">
+            <h2 id = "search-h2">Search for a City:</h2>
+            <input type="text" id = "search-city-input" placeholder = "Input City Name Here">
             <button id = "search-button">Search</button>
-            <div id="search-history"></div>
+            <div id="search-history-container">
+                <div id="search-history"></div>
+            </div>
         </div>
 
         <div id="current-day-city-result-container">
@@ -33,40 +35,41 @@
         </div>
 
         <div id="forecast-container">
+            <h2 id="five-day-forecast">5 Day Forecast</h2>
             <div class="forecast-days">
                 <h2 class="forecast-date" id="forecast-date-1"></h2>
                 <img src="" id = "forecast-day-1-img" alt="">
-                <p id="forecast-day-1-temp"></p>
-                <p id="forecast-day-1-wind"></p>
-                <p id="forecast-day-1-humidity"></p>  
+                <p class = "forecast-text"id="forecast-day-1-temp"></p>
+                <p class = "forecast-text"id="forecast-day-1-wind"></p>
+                <p class = "forecast-text"id="forecast-day-1-humidity"></p>  
             </div>
             <div class="forecast-days">
                 <h2 class="forecast-date" id="forecast-date-2"></h2>
                 <img src="" id = "forecast-day-1-img" alt="">
-                <p id="forecast-day-1-temp"></p>
-                <p id="forecast-day-1-wind"></p>
-                <p id="forecast-day-1-humidity"></p>  
+                <p class = "forecast-text" id="forecast-day-2-temp"></p>
+                <p class = "forecast-text" id="forecast-day-2-wind"></p>
+                <p class = "forecast-text" id="forecast-day-2-humidity"></p>  
             </div>
             <div class="forecast-days">
                 <h2 class="forecast-date" id="forecast-date-3"></h2>
                 <img src="" id = "forecast-day-1-img" alt="">
-                <p id="forecast-day-1-temp"></p>
-                <p id="forecast-day-1-wind"></p>
-                <p id="forecast-day-1-humidity"></p>  
+                <p class = "forecast-text" id="forecast-day-3-temp"></p>
+                <p class = "forecast-text" id="forecast-day-3-wind"></p>
+                <p class = "forecast-text" id="forecast-day-3-humidity"></p>  
             </div>
             <div class="forecast-days">
                 <h2 class="forecast-date" id="forecast-date-4"></h2>
                 <img src="" id = "forecast-day-1-img" alt="">
-                <p id="forecast-day-1-temp"></p>
-                <p id="forecast-day-1-wind"></p>
-                <p id="forecast-day-1-humidity"></p>  
+                <p class = "forecast-text" id="forecast-day-4-temp"></p>
+                <p class = "forecast-text" id="forecast-day-4-wind"></p>
+                <p class = "forecast-text" id="forecast-day-4-humidity"></p>  
             </div>
             <div class="forecast-days">
                 <h2 class="forecast-date" id="forecast-date-5"></h2>
                 <img src="" id = "forecast-day-1-img" alt="">
-                <p id="forecast-day-1-temp"></p>
-                <p id="forecast-day-1-wind"></p>
-                <p id="forecast-day-1-humidity"></p>  
+                <p class = "forecast-text" id="forecast-day--temp"></p>
+                <p class = "forecast-text" id="forecast-day--wind"></p>
+                <p class = "forecast-text" id="forecast-day--humidity"></p>  
             </div>
         </div>
     </section>

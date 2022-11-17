@@ -12,6 +12,7 @@
     --indigo: #003482;
     --clearContainer: rgba(0, 0, 13, 15%);
     --clearBorder: rgba(255, 255, 255, 15%);
+    --yellow: rgb(255, 217, 0);
 }
 
 body {
@@ -23,7 +24,7 @@ body {
 
 .header {
     width: 100%;
-    height: 70px;
+    height: 100px;
     display: flex;
     justify-content: center;
     background-color: var(--darkblue);
@@ -33,23 +34,74 @@ body {
 h1 {
     margin: 10px;
     padding: 2px;
-    color: #fff;
-    font-size: 35px;
+    color: var(--yellow);
+    font-size: 40px;
+    text-shadow: 0 0 2px #000;
 }
 
 #main {
     display: flex;
+    flex-wrap: wrap;
 }
 
 #search-container {
+    display: flex;
+    flex-direction: column;
     width: 30%;
     height: 600px;
+    align-items: center;
     background-color: var(--clearContainer);
+    border: 4px solid var(--clearBorder);
+    border-radius: 3px;
+}
+
+#search-h2 {
+    font-size: 30px;
+    color: var(--yellow);
+    text-shadow: 0 0 2px #000;
+    margin: 3px;
+    padding: 2px;
+}
+
+#search-city-input {
+    width: auto;
+    margin: 3px 5px;
+    padding: 2px;
+    text-align: center;
+    font-size: 1em;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+#search-city-input:hover,
+#search-button:hover {
+    border: 2px solid #fff;
+}
+
+#search-button {
+    width: 75px;
+    border-radius: 10px;
+    margin: 3px 5px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+#search-history-container {
+    width: auto;
+    height: fit-content;
+    overflow-y: scroll;
+    max-height: 460px;
+    border-radius: 10px;
+    margin: 3px 5px;
+    padding: 2px;
+    background-color: var(--clearContainer);
+    border: 4px solid var(--clearBorder);
+    border-radius: 3px;
 }
 
 #current-day-city-result-container {
     width: 70%;
-    height: 300px;
+    height: 600px;
     background-color: var(--clearContainer);
     border: 4px solid var(--clearBorder);
     border-radius: 3px;
@@ -57,18 +109,28 @@ h1 {
 
 #forecast-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    width: 70%;
-    height: 300px;
+    width: 100%;
+    height: 600px;
     background-color: var(--clearContainer);
     border: 4px solid var(--clearBorder);
     border-radius: 3px;
 }
 
+#five-day-forecast {
+    color: var(--yellow);
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+    text-shadow: 0 0 2px #000;
+}
+
 .forecast-days {
-    width: 100px;
-    height: 200px;
+    width: 250px;
+    height: 400px;
     background-color: var(--clearContainer);
     border: 4px solid var(--clearBorder);
+    border-radius: 20px;
 }
